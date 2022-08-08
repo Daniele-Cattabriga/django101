@@ -31,6 +31,5 @@ def delete_blog_post(post_id: int) -> int:
 
 def updated_blog_post(post_id: int, **kwargs) -> Optional[BlogPost]:
     BlogPost.objects.filter(id=post_id).update(**kwargs)
-    return BlogPost.objects.filter(id=post_id)
 
 #ALL IS TO BE TESTED
